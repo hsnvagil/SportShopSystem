@@ -1,0 +1,133 @@
+﻿<Window x:Class="Application.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Application"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Clients" Height="30" Width="120">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <Button Content="Edit" Click="EditClient_OnClick" Margin="5" />
+                        <Button Content="Del" Click="RemoveClient_OnClick" Margin="5" />
+                        <Button Content="Insert" Margin="5" Click="CreateNewClient_OnClick" />
+                        <ComboBox Name="ClientsCmbBox" Width="Auto" Margin="5"
+                                  SelectionChanged="ClientsCmbBox_OnSelectionChanged">
+                            <ComboBoxItem>Id</ComboBoxItem>
+                            <ComboBoxItem>First Name</ComboBoxItem>
+                            <ComboBoxItem>Last Name</ComboBoxItem>
+                            <ComboBoxItem>Gender</ComboBoxItem>
+                            <ComboBoxItem>Birth Date</ComboBoxItem>
+                        </ComboBox>
+                        <TextBox Name="SearchClientTxtBox" Width="220" Margin="5" />
+                        <Button Content="🔎" Margin="0 5 5 5" Click="SearchClient_OnClick" />
+                    </StackPanel>
+                    <DataGrid x:Name="ClientDataGrid" IsReadOnly="True" ColumnWidth="Auto" AutoGenerateColumns="False"
+                              CanUserSortColumns="False">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" />
+                            <DataGridTextColumn Header="First Name" Binding="{Binding FirstName}" />
+                            <DataGridTextColumn Header="Last Name" Binding="{Binding LastName}" />
+                            <DataGridTextColumn Header="Gender" Binding="{Binding Gender}" />
+                            <DataGridTextColumn Header="Birth Date" Binding="{Binding BirthDate.Date}" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Sellers" Height="30" Width="120">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <Button Content="Edit" Click="EditSeller_OnClick" Margin="5" />
+                        <Button Content="Del" Click="RemoveSeller_OnClick" Margin="5" />
+                        <Button Margin="5" Content="Insert" HorizontalContentAlignment="Center"
+                                VerticalContentAlignment="Center" Click="CreateNewSeller_OnClick" />
+                        <ComboBox Name="SellersCmbBox" Width="Auto" Margin="5"
+                                  SelectionChanged="SellersCmbBox_OnSelectionChanged">
+                            <ComboBoxItem>Id</ComboBoxItem>
+                            <ComboBoxItem>First Name</ComboBoxItem>
+                            <ComboBoxItem>Last Name</ComboBoxItem>
+                            <ComboBoxItem>Gender</ComboBoxItem>
+                            <ComboBoxItem>Birth Date</ComboBoxItem>
+                            <ComboBoxItem>Hire Date</ComboBoxItem>
+                            <ComboBoxItem>End Date</ComboBoxItem>
+                        </ComboBox>
+                        <TextBox Name="SearchSellerTxtBox" Width="220" Margin="5" />
+                        <Button Content="🔎" Margin="0 5 5 5" Click="SearchSeller_OnClick" />
+                    </StackPanel>
+                    <DataGrid x:Name="SellerDataGrid" IsReadOnly="True" ColumnWidth="Auto" AutoGenerateColumns="False"
+                              CanUserSortColumns="False">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" />
+                            <DataGridTextColumn Header="First Name" Binding="{Binding FirstName}" />
+                            <DataGridTextColumn Header="Last Name" Binding="{Binding LastName}" />
+                            <DataGridTextColumn Header="Gender" Binding="{Binding Gender}" />
+                            <DataGridTextColumn Header="Birth Date" Binding="{Binding BirthDate}" />
+                            <DataGridTextColumn Header="Hire Date" Binding="{Binding HireDate}" />
+                            <DataGridTextColumn Header="End Date" Binding="{Binding EndDate}" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Products" Height="30" Width="120">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <Button Content="Edit" Click="EditProduct_OnClick" Margin="5" />
+                        <Button Content="Del" Click="RemoveProduct_OnClick" Margin="5" />
+                        <Button Margin="5" Content="Insert" HorizontalContentAlignment="Center"
+                                VerticalContentAlignment="Center" Click="CreateNewProduct_OnClick" />
+                        <ComboBox Name="ProductsCmbBox" Width="Auto" Margin="5"
+                                  SelectionChanged="ProductsCmbBox_OnSelectionChanged">
+                            <ComboBoxItem>Id</ComboBoxItem>
+                            <ComboBoxItem>Name</ComboBoxItem>
+                            <ComboBoxItem>Price</ComboBoxItem>
+                        </ComboBox>
+                        <TextBox Name="SearchProductTxtBox" Width="220" Margin="5" />
+                        <Button Content="🔎" Margin="0 5 5 5" Click="SearchProduct_OnClick" />
+                    </StackPanel>
+                    <DataGrid x:Name="ProductDataGrid" IsReadOnly="True" ColumnWidth="Auto" AutoGenerateColumns="False"
+                              CanUserSortColumns="False">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" />
+                            <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
+                            <DataGridTextColumn Header="Price" Binding="{Binding Price}" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Orders" Height="30" Width="120">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <Button Content="Insert" Click="CreateNewOrder_OnClick" Margin="5" />
+                        <ComboBox Name="OrdersCmbBox" Width="Auto" Margin="5"
+                                  SelectionChanged="OrdersProductsCmbBox_OnSelectionChanged">
+                            <ComboBoxItem>Id</ComboBoxItem>
+                            <ComboBoxItem>Client First Name</ComboBoxItem>
+                            <ComboBoxItem>Client Last Name</ComboBoxItem>
+                            <ComboBoxItem>Seller First Name</ComboBoxItem>
+                            <ComboBoxItem>Seller Last Name</ComboBoxItem>
+                            <ComboBoxItem>Product</ComboBoxItem>
+                            <ComboBoxItem>Order Date</ComboBoxItem>
+                        </ComboBox>
+                        <TextBox Name="SearchOrderTxtBox" Width="220" Margin="5" />
+                        <Button Content="🔎" Margin="0 5 5 5" Click="SearchOrder_OnClick" />
+                    </StackPanel>
+                    <DataGrid x:Name="OrderDataGrid" IsReadOnly="True" ColumnWidth="Auto" AutoGenerateColumns="False"
+                              CanUserSortColumns="False">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" />
+                            <DataGridTextColumn Header="Client First Name" Binding="{Binding Client.FirstName}" />
+                            <DataGridTextColumn Header="Client Last Name" Binding="{Binding Client.LastName}" />
+                            <DataGridTextColumn Header="Seller First Name" Binding="{Binding Seller.FirstName}" />
+                            <DataGridTextColumn Header="Seller Last Name" Binding="{Binding Seller.LastName}" />
+                            <DataGridTextColumn Header="Product" Binding="{Binding Product.Name}" />
+                            <DataGridTextColumn Header="Order Date" Binding="{Binding OrderDate}" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

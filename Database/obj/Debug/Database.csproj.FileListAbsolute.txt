@@ -1,0 +1,14 @@
+C:\Users\Agil Hasanov\source\repos\SportShop\Database\bin\Debug\Database.dll.config
+C:\Users\Agil Hasanov\source\repos\SportShop\Database\bin\Debug\Database.dll
+C:\Users\Agil Hasanov\source\repos\SportShop\Database\bin\Debug\Database.pdb
+C:\Users\Agil Hasanov\source\repos\SportShop\Database\bin\Debug\Domain.dll
+C:\Users\Agil Hasanov\source\repos\SportShop\Database\bin\Debug\EntityFramework.dll
+C:\Users\Agil Hasanov\source\repos\SportShop\Database\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Agil Hasanov\source\repos\SportShop\Database\bin\Debug\Domain.pdb
+C:\Users\Agil Hasanov\source\repos\SportShop\Database\bin\Debug\Domain.dll.config
+C:\Users\Agil Hasanov\source\repos\SportShop\Database\bin\Debug\EntityFramework.xml
+C:\Users\Agil Hasanov\source\repos\SportShop\Database\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Agil Hasanov\source\repos\SportShop\Database\obj\Debug\Database.csprojAssemblyReference.cache
+C:\Users\Agil Hasanov\source\repos\SportShop\Database\obj\Debug\Database.csproj.CopyComplete
+C:\Users\Agil Hasanov\source\repos\SportShop\Database\obj\Debug\Database.dll
+C:\Users\Agil Hasanov\source\repos\SportShop\Database\obj\Debug\Database.pdb

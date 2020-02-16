@@ -1,0 +1,6 @@
+C:\Users\Agil Hasanov\source\repos\SportShop\Domain\bin\Debug\Domain.dll.config
+C:\Users\Agil Hasanov\source\repos\SportShop\Domain\bin\Debug\Domain.dll
+C:\Users\Agil Hasanov\source\repos\SportShop\Domain\bin\Debug\Domain.pdb
+C:\Users\Agil Hasanov\source\repos\SportShop\Domain\obj\Debug\Domain.dll
+C:\Users\Agil Hasanov\source\repos\SportShop\Domain\obj\Debug\Domain.pdb
+C:\Users\Agil Hasanov\source\repos\SportShop\Domain\obj\Debug\Domain.csprojAssemblyReference.cache

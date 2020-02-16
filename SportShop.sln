@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{DAF2425C-133E-410C-BF09-D7D83B919BB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{C8BD6E1D-D119-41FA-82F0-C0AC0F26C359}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{E012696D-39FE-40BD-A9B2-5EAF4EE0E842}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAF2425C-133E-410C-BF09-D7D83B919BB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAF2425C-133E-410C-BF09-D7D83B919BB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAF2425C-133E-410C-BF09-D7D83B919BB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAF2425C-133E-410C-BF09-D7D83B919BB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8BD6E1D-D119-41FA-82F0-C0AC0F26C359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8BD6E1D-D119-41FA-82F0-C0AC0F26C359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8BD6E1D-D119-41FA-82F0-C0AC0F26C359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8BD6E1D-D119-41FA-82F0-C0AC0F26C359}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E012696D-39FE-40BD-A9B2-5EAF4EE0E842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E012696D-39FE-40BD-A9B2-5EAF4EE0E842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E012696D-39FE-40BD-A9B2-5EAF4EE0E842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E012696D-39FE-40BD-A9B2-5EAF4EE0E842}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5E25558-153F-477F-B120-01E822608581}
+	EndGlobalSection
+EndGlobal
